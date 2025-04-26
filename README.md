@@ -8,7 +8,7 @@ Clone o repositório para a sua máquina:  git clone https://github.com/HeitorFo
 
 ### Entrar no repositório:
 
-cd repositorio-que-voce-criou-com-o-nome-que-voce-deu
+cd github-api
 
 
 npm install
@@ -16,8 +16,6 @@ npm install
 ### Baixar dependências:
 
 npm install -D tailwindcss@3 postcss autoprefixer
-
-npx tailwindcss init -p
 
 
 npm install axios
