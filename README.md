@@ -32,4 +32,5 @@ npm install --save-dev @types/styled-components
 ### Rodar a aplicação
 
 npm run dev
+
 dar um ctrl + click no link que aparece no terminal 
