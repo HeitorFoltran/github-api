@@ -96,12 +96,12 @@ function TelaStyled() {
   const [userData, setUserData] = useState<any>(null)
   const [erro, setErro] = useState('')
 
-  const handleSearch = async () => {
+  const handleBusca = async () => {
     try {
-      const response = await endpoint(username)
-      setUserData(response.data)
+      const resposta = await endpoint(username)
+      setUserData(resposta.data)
       setErro('')
-    } catch (error) {
+    } catch (erro) {
       setUserData(null)
       setErro('Usuário ' + username + ' não encontrado.')
     }
@@ -119,7 +119,7 @@ function TelaStyled() {
           onChange={(e) => setUsername(e.target.value)}
         />
 
-        <Botao onClick={handleSearch}>BUSCAR</Botao>
+        <Botao onClick={handleBusca}>BUSCAR</Botao>
       </Topo>
 
       <div className="flex-1 flex justify-center items-center">

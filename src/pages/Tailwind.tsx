@@ -7,10 +7,10 @@ function TelaTailwind() {
     const [erro, setErro] = useState('')
     const [condicaoEspecial, setCondicaoEspecial] = useState(false)
 
-    const handleSearch = async () => {
+    const handleBusca = async () => {
         try {
-            const response = await endpoint(username)
-            setUserData(response.data)
+            const resposta = await endpoint(username)
+            setUserData(resposta.data)
             setErro('')
 
             if (username == 'WillGabrielc137') {
@@ -19,7 +19,7 @@ function TelaTailwind() {
                 setCondicaoEspecial(false)
             }
 
-        } catch (error) {
+        } catch (erro) {
             setUserData(null)
             setErro('Usuário ' + username + ' não encontrado.')
         }
@@ -41,7 +41,7 @@ function TelaTailwind() {
                 />
 
                 <button
-                    onClick={handleSearch}
+                    onClick={handleBusca}
                     className="font-bold text-white transition-all duration-500 transform hover:scale-110"
                 >
                     BUSCAR
